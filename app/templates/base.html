@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>From-糗事百科</title>
+        <link href="http://lib.sinaapp.com/js/bootstrap/v3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+            {% if pic %}
+			<img  class="img-responsive" src="{{ pic }}" />
+			{% endif %}
+
+		</div>
+        <div class="hero-unit well ">
+				<p>{{ content }}</p>
+        </div>
+        <div class="navbar  navbar-static-bottom">
+            <button class="btn btn-primary btn-block btn-large" type="button" onclick="location.reload()">下一条</button>
+        </div>
+	</div>
+</div>
+    </body>
+</html>
